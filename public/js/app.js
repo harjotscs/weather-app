@@ -1,4 +1,4 @@
-console.log('JS Loaded')
+
 
 const weatherForm=document.querySelector('#form1')
 const search=document.querySelector('#search')
