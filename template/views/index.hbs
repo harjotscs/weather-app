@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Hi!!!!!!!!!!!!</p>
+        <form id="form1">
+            <input placeholder="Location" id="search">
+            <button>Search</button>
+        </form> 
+        <form id="form2">
+  <input type="radio" id="f" name="gender" value="°f" checked> °F
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" id="c" name="gender" value="°c"> °C<br>
+</form> 
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    {{>footer}}
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
