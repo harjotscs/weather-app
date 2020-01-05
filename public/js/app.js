@@ -1,5 +1,3 @@
-
-
 const weatherForm=document.querySelector('#form1')
 const search=document.querySelector('#search')
 const messageOne=document.querySelector('#message-1')
@@ -23,7 +21,6 @@ const c=document.querySelector('#c')
                 }
                 else{
                     if(f.checked===false){
-                        console.log(data.temp)
                         data.temp=((data.temp-32)*5)/9
                         data.temp=data.temp.toPrecision(4)
                     }
