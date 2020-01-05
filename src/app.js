@@ -34,7 +34,7 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
-        help:'Help Article Will be Updated Soon, till then kindly mail for Any Information at harjotscs@gmail.com ',
+        help:'Help Article Will Be Updated Soon, till then kindly mail for Any Information at harjotscs@gmail.com ',
         name:'Harjot Singh'
     })
 })
