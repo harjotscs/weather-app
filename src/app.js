@@ -9,6 +9,7 @@ const app=express()
 const publicDirectoryPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../template/views')
 const partialsPath=path.join(__dirname,'../template/partials')
+const port=process.env.PORT||3000
 
 app.use(express.static(publicDirectoryPath))
 
@@ -94,6 +95,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server Started')
+app.listen(port,()=>{
+    console.log('Server Started on '+port)
 })
