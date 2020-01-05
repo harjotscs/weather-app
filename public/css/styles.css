@@ -4,15 +4,44 @@
   width: 100%;
   position: relative;
   display: flex;
+  max-width: 650px;
+ 
 }
 
+@media only screen and (min-width: 200px) and (max-width: 700px)and (min-height: 600px) and (max-height: 900px){
+ 
+    
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+        max-width: 650px;
+        
+        
+      }
+      .wrap{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        margin-top: 8%;
+        transform: translate(-50%, -50%);
+      }
+      
+     
+    }
+
+
+
 .searchTerm {
+    max-width: 650px;
   width: 100%;
   border: 3px solid #00B4CC;
   border-right: none;
   padding: 5px;
   height: 20px;
   border-radius: 5px 0 0 5px;
+
   outline: none;
   color: #9DBFAF;
 }
@@ -22,6 +51,7 @@
 }
 
 .searchButton {
+    max-width: 650px;
   width: 40px;
   height: 36px;
   border: 1px solid #00B4CC;
