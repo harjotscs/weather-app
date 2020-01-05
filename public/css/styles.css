@@ -104,6 +104,7 @@ header a {
     max-height:390px;
     border-radius: 10px ;
 }
+
 img:hover{
   padding: 10px;
   box-shadow: 5px 10px 18px rgb(255, 86, 86);
