@@ -4,6 +4,7 @@ const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
 
+
 const app=express()
 
 const publicDirectoryPath=path.join(__dirname,'../public')
@@ -31,6 +32,7 @@ app.get('/about',(req,res)=>{
     })
 })
 
+
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
@@ -41,7 +43,7 @@ app.get('/help',(req,res)=>{
 
 app.get('/weather',(req,res)=>{
     if (!req.query.address)
-    {
+    { 
         return res.send({
             error:'You must provide an address'
         })

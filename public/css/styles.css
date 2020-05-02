@@ -140,8 +140,16 @@ header a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+    
 }
 
+.active{
+  border-bottom: 3px solid red;
+}
+
+header a:hover{
+  border-bottom: 3px solid red;
+}
 .portrait {
     max-width:100%;
     min-height: auto;

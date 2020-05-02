@@ -7,7 +7,6 @@ const f=document.querySelector('#f')
 const c=document.querySelector('#c')
 
 
-
     weatherForm.addEventListener('submit',(e)=>{
         e.preventDefault()
         const location=search.value
