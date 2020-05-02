@@ -174,3 +174,12 @@ button {
     color: white;
     padding: 8px;
 }
+
+@media only screen  and (max-width:322px){
+  
+  #form2{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+}
