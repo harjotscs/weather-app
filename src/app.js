@@ -1,7 +1,6 @@
 const path=require('path')
 const express=require('express')
 const hbs=require('hbs')
-const fs=require('fs')
 const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
 
@@ -12,7 +11,6 @@ const publicDirectoryPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../template/views')
 const partialsPath=path.join(__dirname,'../template/partials')
 
-const content=fs.readFileSync('src/utils/pwabuilder.js').toString()
 
 const port=process.env.PORT||3000
 
@@ -91,9 +89,7 @@ app.get('/help/*',(req,res)=>{
     })
 })
 
-app.get('/pwabuilder-sw.js',(req,res)=>{
-    res.send(content)
-})
+
 
 app.get('*',(req,res)=>{
     res.render('404',{
