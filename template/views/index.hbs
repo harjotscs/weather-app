@@ -38,11 +38,14 @@
     </div>
 
     {{>footer}}
-    <script type="module" >
-        /* This is the "Offline page" service worker
-Add this below content to your HTML page inside a add the js file to your page at the very top to register service worker
-// If you get an error about not being able to import, double check that you have type="module" on your <script /> tag*/
-
+    <script src="/js/app.js"></script>
+</body>
+<script>
+    document.getElementById("weather").className = "active";
+</script>
+</html>
+<script type="module" >
+    
 /*
  This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
  tell the user when there is an update available and let the user know when your PWA is ready to use offline.
@@ -52,10 +55,4 @@ import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
 const el = document.createElement('pwa-update');
 document.body.appendChild(el);
-    </script>
-    <script src="/js/app.js"></script>
-</body>
-<script>
-    document.getElementById("weather").className = "active";
 </script>
-</html>
